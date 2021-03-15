@@ -66,7 +66,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="txtMensagem" class="form-label">Mensagem *:</label>
-                        <textarea class="form-control" id="txtMensagem" name="txtMensagem" rows="3" required>{{ old('txtMensagem') }}</textarea>
+                        <textarea class="form-control" id="txtMensagem" name="txtMensagem" rows="3" maxlength="300" required>{{ old('txtMensagem') }}</textarea>
                         <div class="invalid-feedback">
                             Campo obrigatório.
                         </div>

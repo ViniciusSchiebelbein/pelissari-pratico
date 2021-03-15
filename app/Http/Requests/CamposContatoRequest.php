@@ -27,7 +27,7 @@ class CamposContatoRequest extends FormRequest
             'txtNome' => 'required|max:80',
             'txtEmail' => 'required|email:rfc,dns|max:60',
             'txtTelefone' => 'required|between:10,11',
-            'txtMensagem' => 'required',
+            'txtMensagem' => 'required|max:300',
         ];
     }
 
@@ -43,10 +43,10 @@ class CamposContatoRequest extends FormRequest
             'txtNome.max' => 'Seu nome excedeu o limite de 80 caracteres.',
             'txtTelefone.required' => 'Informe o seu telefone.',
             'txtTelefone.between' => 'Número de telefone inválido.',
-            // 'txtTelefone.numeric' => 'Número de telefone deve conter somente números.',
             'txtEmail.required' => 'Informe o seu email.',
             'txtEmail.max' => 'Seu email excedeu o limite de 60 caracteres.',
             'txtMensagem.required' => 'Preencher o campo de mensagem.',
+            'txtMensagem.max' => 'Sua mensagem excedeu o limite de 300 caracteres.',
         ];
     }
 
